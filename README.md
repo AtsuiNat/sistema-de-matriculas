@@ -8,7 +8,9 @@ Aplicação de matrículas acadêmicas.
 
 O servidor entrega o aplicativo já construído e a API. Ele não monta o HTML.
 
-## Como abrir
+O sistema no ar: https://sistema-de-matriculas-andrews.vercel.app/
+
+## Como abrir no computador
 
 1. Instale o Node.js.
 2. Na pasta do projeto, rode `npm install` e depois `npm start`.
