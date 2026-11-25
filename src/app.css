@@ -1,0 +1,227 @@
+body {
+  background: #f4f6f8;
+  color: #1f2933;
+  font-size: 16px;
+}
+
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+
+.barra {
+  background: #1f2933;
+  color: #fff;
+}
+
+.barra-miolo {
+  display: flex;
+  align-items: center;
+  gap: 12px 18px;
+  flex-wrap: wrap;
+  min-height: 64px;
+  padding: 8px 0;
+}
+
+.marca {
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.menu { display: flex; gap: 4px; flex-wrap: wrap; }
+
+.menu button {
+  background: transparent;
+  color: #e4e7eb;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.menu button.ativo {
+  background: #fff;
+  color: #1f2933;
+}
+
+.quem {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quem small { display: block; color: #9aa5b1; }
+
+.lede {
+  color: #52606d;
+  max-width: 62ch;
+  text-align: center;
+}
+
+.painel .table th,
+.painel .table td.meio {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.gh { text-align: center; }
+
+.login-caixa {
+  max-width: 440px;
+  margin: 9vh auto 40px;
+}
+
+.conta {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+.conta:hover { background: #f8fafc; }
+.conta span { display: block; color: #627d98; font-size: 0.9rem; }
+
+.painel {
+  background: #fff;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+}
+
+.table > :not(caption) > * > * { padding: 0.85rem 0.95rem; }
+.table tbody tr:hover { background: #f8fafc; }
+
+.contents { display: contents; }
+.grade-scroll { overflow-x: auto; }
+
+.grade {
+  display: grid;
+  grid-template-columns: 108px repeat(6, minmax(120px, 1fr));
+  gap: 8px;
+  min-width: 860px;
+}
+
+.gh { font-size: 13px; color: #627d98; font-weight: 650; padding: 2px; text-align: center; }
+.gh small { display: block; font-weight: 400; }
+
+.celula {
+  background: #f8fafc;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  min-height: 84px;
+  padding: 6px;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #d9e2ec;
+  border-left: 3px solid #7b8794;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+}
+
+.chip:last-child { margin-bottom: 0; }
+.chip strong { font-size: 0.82rem; }
+.chip span { color: #627d98; font-size: 0.78rem; }
+.chip.turno-1 { border-left-color: #b45309; }
+.chip.turno-2 { border-left-color: #1d4ed8; }
+.chip.turno-3 { border-left-color: #1f2933; }
+button.chip:hover { background: #f8fafc; }
+
+.aluno-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.aluno-item span { display: block; color: #627d98; font-size: 0.9rem; }
+.aluno-item.ativo { border-color: #1d4ed8; background: #f8fafc; }
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.check { display: flex; gap: 8px; align-items: flex-start; }
+
+.lista-mat { list-style: none; padding: 0; margin: 0; }
+.lista-mat li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid #e4e7eb;
+  padding: 12px 0;
+}
+.lista-mat li:last-child { border-bottom: 0; }
+.lista-mat span { display: block; color: #627d98; }
+
+.modal-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  z-index: 30;
+  overflow: auto;
+}
+
+.modal-caixa {
+  width: min(680px, 100%);
+  background: #fff;
+  border-radius: 12px;
+}
+
+.modal-topo, .modal-rodape { padding: 16px 18px; }
+.modal-topo { border-bottom: 1px solid #e4e7eb; }
+.modal-topo h2 { font-size: 1.25rem; margin: 0; }
+.modal-corpo { padding: 18px; }
+.modal-rodape {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid #e4e7eb;
+}
+
+.toast-msg {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  max-width: min(420px, calc(100vw - 32px));
+  background: #1f2933;
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  z-index: 40;
+  line-height: 1.4;
+}
+
+.toast-msg.erro { background: #9b1c1c; }
+.toast-msg.ok { background: #146c43; }
+
+.carregando {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+  color: #627d98;
+}

@@ -1,0 +1,442 @@
+{
+  "instituicao": "Universidade Aurora",
+  "curso": "Ciência da Computação",
+  "semestre": "2026.2",
+  "usuariosInst": [
+    {
+      "id": "s1",
+      "nome": "Renata Albuquerque",
+      "login": "secretaria",
+      "senha": "123456",
+      "cargo": "Secretaria acadêmica"
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "d1",
+      "codigo": "ALG100",
+      "nome": "Algoritmos e Lógica de Programação",
+      "ementa": "Lógica, algoritmos e os primeiros programas.",
+      "cargaHoraria": 80,
+      "creditos": 4,
+      "prerequisitos": []
+    },
+    {
+      "id": "d2",
+      "codigo": "MAT100",
+      "nome": "Matemática Discreta",
+      "ementa": "Conjuntos, lógica matemática e relações.",
+      "cargaHoraria": 60,
+      "creditos": 4,
+      "prerequisitos": []
+    },
+    {
+      "id": "d3",
+      "codigo": "ICP100",
+      "nome": "Introdução à Computação",
+      "ementa": "Organização do computador e sistemas de numeração.",
+      "cargaHoraria": 60,
+      "creditos": 4,
+      "prerequisitos": []
+    },
+    {
+      "id": "d4",
+      "codigo": "ED200",
+      "nome": "Estruturas de Dados",
+      "ementa": "Listas, pilhas, filas, árvores e o custo de cada uma.",
+      "cargaHoraria": 80,
+      "creditos": 4,
+      "prerequisitos": [
+        "d1"
+      ]
+    },
+    {
+      "id": "d5",
+      "codigo": "BD200",
+      "nome": "Banco de Dados",
+      "ementa": "Modelagem relacional, consultas e integridade.",
+      "cargaHoraria": 80,
+      "creditos": 4,
+      "prerequisitos": [
+        "d1"
+      ]
+    },
+    {
+      "id": "d6",
+      "codigo": "POO200",
+      "nome": "Programação Orientada a Objetos",
+      "ementa": "Objetos, encapsulamento, herança e interfaces.",
+      "cargaHoraria": 80,
+      "creditos": 4,
+      "prerequisitos": [
+        "d1"
+      ]
+    },
+    {
+      "id": "d7",
+      "codigo": "WEB300",
+      "nome": "Programação para Web",
+      "ementa": "Páginas, interação no navegador e consumo de APIs.",
+      "cargaHoraria": 80,
+      "creditos": 4,
+      "prerequisitos": [
+        "d6"
+      ]
+    },
+    {
+      "id": "d8",
+      "codigo": "ES300",
+      "nome": "Engenharia de Software",
+      "ementa": "Requisitos, processo de desenvolvimento e qualidade.",
+      "cargaHoraria": 60,
+      "creditos": 4,
+      "prerequisitos": [
+        "d6"
+      ]
+    },
+    {
+      "id": "d9",
+      "codigo": "SO300",
+      "nome": "Sistemas Operacionais",
+      "ementa": "Processos, memória e sistemas de arquivos.",
+      "cargaHoraria": 60,
+      "creditos": 4,
+      "prerequisitos": [
+        "d4"
+      ]
+    },
+    {
+      "id": "d10",
+      "codigo": "RED300",
+      "nome": "Redes de Computadores",
+      "ementa": "Redes, protocolos e comunicação entre aplicações.",
+      "cargaHoraria": 60,
+      "creditos": 4,
+      "prerequisitos": [
+        "d3"
+      ]
+    }
+  ],
+  "professores": [
+    {
+      "id": "p1",
+      "nome": "Helena Duarte",
+      "email": "helena.duarte@aurora.edu.br",
+      "titulacao": "Doutora",
+      "cargaMaxima": 3,
+      "disciplinas": [
+        "d1",
+        "d4"
+      ]
+    },
+    {
+      "id": "p2",
+      "nome": "Marcos Vieira",
+      "email": "marcos.vieira@aurora.edu.br",
+      "titulacao": "Mestre",
+      "cargaMaxima": 2,
+      "disciplinas": [
+        "d5"
+      ]
+    },
+    {
+      "id": "p3",
+      "nome": "Lúcia Andrade",
+      "email": "lucia.andrade@aurora.edu.br",
+      "titulacao": "Doutora",
+      "cargaMaxima": 3,
+      "disciplinas": [
+        "d3",
+        "d7"
+      ]
+    },
+    {
+      "id": "p4",
+      "nome": "Ricardo Nunes",
+      "email": "ricardo.nunes@aurora.edu.br",
+      "titulacao": "Doutor",
+      "cargaMaxima": 3,
+      "disciplinas": [
+        "d2",
+        "d9"
+      ]
+    },
+    {
+      "id": "p5",
+      "nome": "Camila Torres",
+      "email": "camila.torres@aurora.edu.br",
+      "titulacao": "Mestre",
+      "cargaMaxima": 2,
+      "disciplinas": [
+        "d3",
+        "d10"
+      ]
+    },
+    {
+      "id": "p6",
+      "nome": "Paulo Mendes",
+      "email": "paulo.mendes@aurora.edu.br",
+      "titulacao": "Doutor",
+      "cargaMaxima": 3,
+      "disciplinas": [
+        "d6",
+        "d8"
+      ]
+    }
+  ],
+  "alunos": [
+    {
+      "id": "a1",
+      "nome": "Ana Beatriz Souza",
+      "matricula": "20240012",
+      "email": "ana.souza@aluno.aurora.edu.br",
+      "senha": "123456",
+      "curso": "Ciência da Computação",
+      "periodo": 3,
+      "historico": [
+        "d1",
+        "d2",
+        "d3"
+      ]
+    },
+    {
+      "id": "a2",
+      "nome": "João Pedro Lima",
+      "matricula": "20240045",
+      "email": "joao.lima@aluno.aurora.edu.br",
+      "senha": "123456",
+      "curso": "Ciência da Computação",
+      "periodo": 1,
+      "historico": []
+    },
+    {
+      "id": "a3",
+      "nome": "Marina Costa",
+      "matricula": "20230198",
+      "email": "marina.costa@aluno.aurora.edu.br",
+      "senha": "123456",
+      "curso": "Ciência da Computação",
+      "periodo": 5,
+      "historico": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ]
+    },
+    {
+      "id": "a4",
+      "nome": "Lucas Ferreira",
+      "matricula": "20251103",
+      "email": "lucas.ferreira@aluno.aurora.edu.br",
+      "senha": "123456",
+      "curso": "Ciência da Computação",
+      "periodo": 1,
+      "historico": []
+    }
+  ],
+  "turmas": [
+    {
+      "id": "t1",
+      "codigo": "ALG-A",
+      "disciplinaId": "d1",
+      "professorId": "p1",
+      "horarios": [
+        "21",
+        "41"
+      ],
+      "vagas": 40,
+      "sala": "B-101",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t2",
+      "codigo": "ALG-B",
+      "disciplinaId": "d1",
+      "professorId": "p1",
+      "horarios": [
+        "63"
+      ],
+      "vagas": 30,
+      "sala": "B-204",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t3",
+      "codigo": "ED-A",
+      "disciplinaId": "d4",
+      "professorId": "p1",
+      "horarios": [
+        "33",
+        "53"
+      ],
+      "vagas": 32,
+      "sala": "B-110",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t4",
+      "codigo": "MAT-A",
+      "disciplinaId": "d2",
+      "professorId": "p4",
+      "horarios": [
+        "32"
+      ],
+      "vagas": 40,
+      "sala": "C-201",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t5",
+      "codigo": "SO-A",
+      "disciplinaId": "d9",
+      "professorId": "p4",
+      "horarios": [
+        "61"
+      ],
+      "vagas": 28,
+      "sala": "C-105",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t6",
+      "codigo": "ICP-A",
+      "disciplinaId": "d3",
+      "professorId": "p3",
+      "horarios": [
+        "51"
+      ],
+      "vagas": 35,
+      "sala": "A-012",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t7",
+      "codigo": "WEB-A",
+      "disciplinaId": "d7",
+      "professorId": "p3",
+      "horarios": [
+        "31",
+        "42"
+      ],
+      "vagas": 30,
+      "sala": "Lab-2",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t8",
+      "codigo": "ICP-B",
+      "disciplinaId": "d3",
+      "professorId": "p5",
+      "horarios": [
+        "21"
+      ],
+      "vagas": 30,
+      "sala": "A-008",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t9",
+      "codigo": "RED-A",
+      "disciplinaId": "d10",
+      "professorId": "p5",
+      "horarios": [
+        "53"
+      ],
+      "vagas": 1,
+      "sala": "D-003",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t10",
+      "codigo": "BD-A",
+      "disciplinaId": "d5",
+      "professorId": "p2",
+      "horarios": [
+        "22",
+        "43"
+      ],
+      "vagas": 32,
+      "sala": "Lab-1",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t11",
+      "codigo": "POO-A",
+      "disciplinaId": "d6",
+      "professorId": "p6",
+      "horarios": [
+        "52",
+        "71"
+      ],
+      "vagas": 30,
+      "sala": "B-305",
+      "semestre": "2026.2"
+    },
+    {
+      "id": "t12",
+      "codigo": "ES-A",
+      "disciplinaId": "d8",
+      "professorId": "p6",
+      "horarios": [
+        "62"
+      ],
+      "vagas": 28,
+      "sala": "B-210",
+      "semestre": "2026.2"
+    }
+  ],
+  "matriculas": [
+    {
+      "id": "m1",
+      "alunoId": "a1",
+      "turmaId": "t3",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m2",
+      "alunoId": "a1",
+      "turmaId": "t10",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m3",
+      "alunoId": "a2",
+      "turmaId": "t2",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m4",
+      "alunoId": "a2",
+      "turmaId": "t4",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m5",
+      "alunoId": "a3",
+      "turmaId": "t7",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m6",
+      "alunoId": "a3",
+      "turmaId": "t12",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    },
+    {
+      "id": "m7",
+      "alunoId": "a3",
+      "turmaId": "t9",
+      "status": "ativa",
+      "criadoEm": "2026-11-10T13:00:00.000Z"
+    }
+  ]
+}

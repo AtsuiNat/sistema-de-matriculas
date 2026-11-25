@@ -1,0 +1,15 @@
+Desenvolvi um sistema de atendimento e matrículas. O front-end é um aplicativo React: as telas são componentes, o estado fica no React e a interface usa Bootstrap. O back-end é um servidor Express em Node.js. Ele entrega o aplicativo e uma API em JSON, gravando os dados em arquivo. O Express não monta o HTML, então não há renderização no servidor.
+
+O sistema separa a visão do aluno e a visão da instituição:
+
+1. O aluno consulta as turmas ofertadas e realiza a matrícula.
+2. O aluno acompanha a grade semanal, com dia e turno, e pode cancelar a matrícula. A vaga volta para a oferta.
+3. A secretaria mantém a oferta: disciplina, professor, horário, sala e vagas.
+4. A matrícula só entra se houver vaga, se o pré-requisito estiver aprovado e se não houver choque de horário.
+5. A secretaria não aloca um professor acima da carga máxima nem em dois encontros no mesmo horário.
+
+O horário usa o código de dois dígitos do enunciado. O primeiro dígito é o dia: 2 segunda, 3 terça, 4 quarta, 5 quinta, 6 sexta e 7 sábado. O segundo é o turno: 1 manhã, 2 tarde e 3 noite. Assim, 21 é segunda-feira de manhã e 53 é quinta-feira de noite.
+
+Para executar, extraio o ZIP, dou dois cliques em iniciar.bat e acesso http://localhost:3000. A senha de demonstração é 123456. No vídeo uso o aluno Lucas Ferreira, matrícula 20251103, e a secretaria, usuário secretaria.
+
+As regras da matrícula estão na função motivosMatricula, e as regras da oferta estão na função validarTurma, ambas no server.js. As telas React ficam em src/components. O vídeo mostra a execução e essas partes do código.
